@@ -1,3 +1,7 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
 class Parent {
     String name;
 
@@ -23,6 +27,10 @@ class Child extends Parent {
         // 자식 클래스에서는 브러시 사용 시간에 따라 다른 청결도를 반환
         return 3 * duration;
     }
+
+     int brush(int duration, int duration2) {
+        return 3 * duration * duration2;
+    }
 }
 
 public class Main {
@@ -36,5 +44,6 @@ public class Main {
         System.out.println("부모: " + parent.brush());
         // 자식 클래스의 오버로딩된 brush 메서드 호출
         System.out.println("자식: " + child.brush(2)); // 브러싱 시간을 전달하여 호출
+        System.out.println("자식: " + child.brush(2,3)); // 더 열심히
     }
 }

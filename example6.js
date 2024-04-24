@@ -18,7 +18,7 @@ Person.prototype.getAge = function () {
     ------------------------------
  */
 function Person1(name) {
-  Person.call(this, name);
+  Person.call(this, name); // 생성자 호출시 name 파라미터 사용
 }
 
 // 프로토타입 체인 설정

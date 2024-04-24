@@ -8,7 +8,7 @@ class GrandParent {
   }
 
   wow() {
-    return "smile";
+    return "^_____________^";
   }
 }
 
@@ -53,8 +53,6 @@ class Child extends Parent {
   }
 }
 
-let grandParent = new GrandParent("GrandParent");
-let parent = new Parent("Parent");
 let child = new Child("Child");
 
 console.log(child.애교부리기());
